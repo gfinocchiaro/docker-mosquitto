@@ -6,4 +6,4 @@ RUN sudo apt-get install -y software-properties-common \
 	&& sudo apt-get install -y --force-yes mosquitto
 
 EXPOSE 1883
-ENTRYPOINT ["/usr/sbin/mosquitto"]
+CMD ["/usr/sbin/mosquitto"]
